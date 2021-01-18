@@ -75,52 +75,53 @@ Python은 웹 기반 애플리케이션을 빌드하는 데 사용할 수 있는
 
 - steam — Steam
 
-- 토너먼트 — 토너먼트
+- tournament — Tournaments
 
 - xbox — Xbox
+
 (각 플랫폼은 게임 전반에 걸쳐 다양한 서버 지역으로 더 분리됩니다.)
 
 형식 : { platform-region ( shard ) — Region_name }
 
-- pc-as — 아시아
+- pc-as — Asia
 
-- pc-eu — 유럽
+- pc-eu — Europe
 
-- pc-jp — 일본
+- pc-jp — Japan
 
-- pc-kakao — 카카오
+- pc-kakao — Kakao
 
-- pc-krjp — 한국
+- pc-krjp — Korea
 
-- pc-na — 북미
+- pc-na — North America
 
-- pc-oc — 오세아니아
+- pc-oc — Oceania
 
-- pc-ru — 러시아
+- pc-ru — Russia
 
-- pc-sa — 중남미
+- pc-sa — South and Central America
 
-- pc-sea — 동남아시아
+- pc-sea — South East Asia
 
-- pc-tournament — 토너먼트
+- pc-tournament — Tournaments
 
-- psn-as — 아시아
+- psn-as — Asia
 
-- psn-eu — 유럽
+- psn-eu — Europe
 
-- psn-na — 북미
+- psn-na — North America
 
-- psn-oc — 오세아니아
+- psn-oc — Oceania
 
-- xbox-as — 아시아
+- xbox-as — Asia
 
-- xbox-eu — 유럽
+- xbox-eu — Europe
 
-- xbox-na — 북미
+- xbox-na — North America
 
-- xbox-oc — 오세아니아
+- xbox-oc — Oceania
 
-- xbox-sa — 남아메리카
+- xbox-sa — South America
 
 ## 엔드포인트
 
