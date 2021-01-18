@@ -267,11 +267,11 @@ https://api.pubg.com/shards / steam / leaderboards / {GAMEMODE}? page [number] =
 
 ## API 요청하기(request)
 
-**PUBG API 서비스에 연결한다.
+**PUBG API 서비스에 연결한다.**
 
 "API 요청하기" 코드의 첫 번째 블록을 본다. 5행 쯤에서 샤드 종류에 대한 주석을 볼 수 있다. 8행에는 steam 샤드의 url 형식이 포함되어 있다. 이 notebook은 기본적으로 steam 샤드로 구성된다. steam 샤드를 글의 앞부분에서 지정한 다른 샤드로 자유롭게 변경한다.
 
-**13 행을 보자. 다음에 따라 API 키를 입력한다(9행의 주석에도 설명되어 있다).
+**13 행을 보자. 다음에 따라 API 키를 입력한다(9행의 주석에도 설명되어 있다).**
 
 “Authorization” : “Bearer [INSERT API KEY HERE]”
 
@@ -279,7 +279,7 @@ https://api.pubg.com/shards / steam / leaderboards / {GAMEMODE}? page [number] =
 
 이전에 받은 API 키를 괄호없이 위의 공간에 붙여넣고 셀을 실행한다.
 
-**Google Colaboratory 노트북을 스크롤하여, 이 튜토리얼에서는 몇 사례를 보여주기 위해 일부의 엔드포인트만 다루고 있음을 확인한다.
+**Google Colaboratory 노트북을 스크롤하여, 이 튜토리얼에서는 몇 사례를 보여주기 위해 일부의 엔드포인트만 다루고 있음을 확인한다.**
 
 - 우리는 Player, Match 및 Telemetry 엔드포인트를 다룰 것이다.
 
