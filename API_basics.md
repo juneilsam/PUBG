@@ -16,7 +16,7 @@
 
 3. 과거 14 일 동안의 경기/플레이어 데이터가 보존된다.
 
-4. 개발자 커뮤니티가 있습니다. 공식 PUBG 개발자 포럼 또는 공식 PUBG 개발자 디스코드 채널이다.
+4. 개발자 커뮤니티가 있다(공식 PUBG 개발자 포럼, 공식 PUBG 개발자 디스코드 채널).
 
 ---
 
@@ -130,7 +130,7 @@ URL 형식 : https://api.pubg.com/pubg.com/shards/[INSERT SHARD NAME] / [INSERT 
 
 ### 엔드 포인트 유형
 
-1. 플레이어 통계(Players, [선수 통계 바로가기](https://documentation.pubg.com/en/players-endpoint.html))
+**1. 플레이어 통계**(Players, [선수 통계 바로가기](https://documentation.pubg.com/en/players-endpoint.html))
 
 이 엔드 포인트는 검색된 플레이어의 가장 최근 경기 (14일 간)에 대한 통계를 제공한다. 아래와 같이 플레이어 이름과 계정 ID로 플레이어 데이터를 추출 할 수 있다.
 
@@ -144,7 +144,9 @@ URL 공식 : https://api.pubg.com/shards/steam/players?filter[playerNames]=Playe
 
 URL 공식 : https://api.pubg.com/shards/steam/players?filter[playerNames]=PlayerName1,PlayerName2
 
-2. 시즌 통계(Season Stats, [시즌 통계 바로가기](https://documentation.pubg.com/en/seasons-endpoint.html))
+---
+
+**2. 시즌 통계**(Season Stats, [시즌 통계 바로가기](https://documentation.pubg.com/en/seasons-endpoint.html))
 
 시즌 통계는 계산 된 URL을 사용하여 플랫폼 또는 서버를 기반으로 검색 할 수 있다. 계정 ID와 시즌 ID가있는 특정 플레이어의 시즌 데이터이다.
 
@@ -158,7 +160,9 @@ URL 형식 : https://api.pubg.com/shards/steam / players / {accountId} / seasons
    
 여기에 있는 변수에는 입힌 피해, 처치 및 치료와 같은 기본 정보가 포함된다. 또한 가장 최근의 주간 킬 및 승리와 같은 일부 집계 변수도 여기에서 검색할 수 있다.
 
-3. 원격 측정 통계(Telemetry, [원격 측정 통계 바로가기](https://documentation.pubg.com/en/telemetry.html))
+---
+
+**3. 원격 측정 통계**(Telemetry, [원격 측정 통계 바로가기](https://documentation.pubg.com/en/telemetry.html))
 
 원격 측정 데이터는 복잡하지만 매우 상세하다. 엔드 포인트에는 gzip 파일로 압축된 대규모 데이터 및 정보가 포함되어 있으며, 이는 경기에서 발생한 모든 이벤트의 기록과 3차원 지도에서의 좌표를 유지한다.
 
@@ -170,7 +174,9 @@ URL 공식 : {약간 복잡함, 나중에}
 
 검색 및 캐싱은 하드웨어의 성능 기능에 따라 많은 시간이 걸립니다. Telemetry 데이터로 계산 또는 집계된 필드를 만드는 데 오래 걸릴 수 있다. 우수한 서버와 하드웨어는 데이터 수집 프로세스의 속도를 높인다.
 
-4. 매치 통계(Matches, [경기 통계 바로가기](https://documentation.pubg.com/en/matches-endpoint.html))
+---
+
+**4. 매치 통계**(Matches, [경기 통계 바로가기](https://documentation.pubg.com/en/matches-endpoint.html))
 
 매치 데이터에는 플레이한 게임 모드, 매치 기간 또는 사용된 플랫폼(이것이 샤드임을 기억)과 같은 완료된 PUBG 매치에 대한 정보가 포함된다.
 
@@ -199,13 +205,17 @@ URL 형식 : https://api.pubg.com/shards/steam/matches/2b667ba8-3c18-458b-be4e-e
 
 전체 데이터 사전은 사이트에서 찾을 수 있다.
 
-5. 생애 통계(Lifetime, [생애 통계 바로가기](https://documentation.pubg.com/en/lifetime-stats.html))
+---
+
+**5. 생애 통계**(Lifetime, [생애 통계 바로가기](https://documentation.pubg.com/en/lifetime-stats.html))
 
 이것은 별다른 설명없이도 된다! 이 엔드 포인트를 사용하면 단일 플레이어가 참여한 모든 시즌이 요약된 생애 통계에 액세스 할 수 있다. 이 엔드 포인트 내에서 찾을 수있는 통계에는 해당 시즌의 총 어시스트, 치료, 킬, 패배, 부활 등이 포함된다.
 
 URL 형식 : https://api.pubg.com/shards/steam/ players / {ACCOUNTID} / seasons / lifetime
 
-6. 상위권 통계(LeaderBoard, [상위권 통계 바로가기](https://documentation.pubg.com/en/leaderboards-endpoint.html))
+---
+
+**6. 상위권 통계**(LeaderBoard, [상위권 통계 바로가기](https://documentation.pubg.com/en/leaderboards-endpoint.html))
 
 상위권 통계에는 특정 게임 모드 별 상위 1000명의 현재 순위가 포함된다. 상위권은 게임 모드(솔로, 듀오, 스쿼드)에 따라 다르다. 리더 보드 엔드 포인트는 각각 500개씩 두 개의 "페이지"로 분리되기 때문에, 1000개를 모두 얻기 위해서는 두 번의 요청이 필요하다. 0은 처음 500명에 대한 첫 페이지이고, 1은 나머지 500명에 대한 두 번째 페이지이다.
 
@@ -216,7 +226,9 @@ https://api.pubg.com/shards / steam / leaderboards / {GAMEMODE}? page [number] =
     * 참고 :
     “리더 보드 통계는 PC 플레이어만 사용할 수 있다. 리더 보드는 2시간마다 업데이트된다.”— PUBG API 문서
     
-7. 토너먼트 통계(Tournaments, [토너먼트 통계 바로가기](https://documentation.pubg.com/en/tournaments-endpoint.html))
+---
+    
+**7. 토너먼트 통계**(Tournaments, [토너먼트 통계 바로가기](https://documentation.pubg.com/en/tournaments-endpoint.html))
 
 토너먼트 엔드 포인트는 다음 두 가지 목적에 부합한다 : 현재 가능한 토너먼트 리스트에 액세스하는 것, 단일 토너먼트에서 데이터를 추출하는 것.
 
