@@ -2,6 +2,12 @@
 
 번역 : juneilsam
 
+# How to write a PUBG app using the PUBG API KOR.ver
+
+# PUBG API를 이용하여 PUBG 앱을 작성하는 방법 한글번역
+
+---
+
 # PUBG API란?
 
 무료로 제공되고 있는 PUBG API를 사용하면 PC(Steam, Kakao), Xbox 및 PS4의 PUBG 매치 데이터로 앱과 웹사이트를 만들 수 있다(모바일 데이터는 현재 PUBG API를 통해 사용할 수 없다).
