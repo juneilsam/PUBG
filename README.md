@@ -9,4 +9,5 @@ STEAM PLAYERUNKNOWN’SBATTLEGROUND open API 게임 데이터 분석
 - 게임 데이터에 나타나는 주제 도출
 
 사용언어 – Python
+
 Tool – Google Colab, Matplotlib, Seaborn, Pandas, Numpy
